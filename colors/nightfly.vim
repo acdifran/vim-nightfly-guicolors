@@ -270,6 +270,7 @@ exec 'highlight NightflyRegalBlue guifg=' . s:regal_blue
 exec 'highlight NightflySteelBlue guifg=' . s:steel_blue
 exec 'highlight NightflyCadetBlue guifg=' . s:cadet_blue
 exec 'highlight NightflyGreyBlue guifg=' . s:grey_blue
+
 exec 'highlight NightflyYellow guifg=' . s:yellow
 exec 'highlight NightflyPeach guifg=' . s:peach
 exec 'highlight NightflyTan guifg=' . s:tan
@@ -283,6 +284,49 @@ exec 'highlight NightflyIndigo guifg=' . s:indigo
 exec 'highlight NightflyTurquoise guifg=' . s:turquoise
 exec 'highlight NightflyEmerald guifg=' . s:emerald
 exec 'highlight NightflyGreen guifg=' . s:green
+
+exec 'highlight NightflyYellowBold gui=bold guifg=' . s:yellow
+exec 'highlight NightflyPeachBold gui=bold guifg=' . s:peach
+exec 'highlight NightflyTanBold gui=bold guifg=' . s:tan
+exec 'highlight NightflyOrangeBold gui=bold guifg=' . s:orange
+exec 'highlight NightflyRedBold gui=bold guifg=' . s:red
+exec 'highlight NightflyWatermelonBold gui=bold guifg=' . s:watermelon
+exec 'highlight NightflyVioletBold gui=bold guifg=' . s:violet
+exec 'highlight NightflyPurpleBold gui=bold guifg=' . s:purple
+exec 'highlight NightflyBlueBold gui=bold guifg=' . s:blue
+exec 'highlight NightflyIndigoBold gui=bold guifg=' . s:indigo
+exec 'highlight NightflyTurquoiseBold gui=bold guifg=' . s:turquoise
+exec 'highlight NightflyEmeraldBold gui=bold guifg=' . s:emerald
+exec 'highlight NightflyGreenBold gui=bold guifg=' . s:green
+
+exec 'highlight NightflyYellowItalic gui=italic guifg=' . s:yellow
+exec 'highlight NightflyPeachItalic gui=italic guifg=' . s:peach
+exec 'highlight NightflyTanItalic gui=italic guifg=' . s:tan
+exec 'highlight NightflyOrangeItalic gui=italic guifg=' . s:orange
+exec 'highlight NightflyRedItalic gui=italic guifg=' . s:red
+exec 'highlight NightflyWatermelonItalic gui=italic guifg=' . s:watermelon
+exec 'highlight NightflyVioletItalic gui=italic guifg=' . s:violet
+exec 'highlight NightflyPurpleItalic gui=italic guifg=' . s:purple
+exec 'highlight NightflyBlueItalic gui=italic guifg=' . s:blue
+exec 'highlight NightflyIndigoItalic gui=italic guifg=' . s:indigo
+exec 'highlight NightflyTurquoiseItalic gui=italic guifg=' . s:turquoise
+exec 'highlight NightflyEmeraldItalic gui=italic guifg=' . s:emerald
+exec 'highlight NightflyGreenItalic gui=italic guifg=' . s:green
+
+exec 'highlight NightflyYellowBoldItalic gui=bold,italic guifg=' . s:yellow
+exec 'highlight NightflyPeachBoldItalic gui=bold,italic guifg=' . s:peach
+exec 'highlight NightflyTanBoldItalic gui=bold,italic guifg=' . s:tan
+exec 'highlight NightflyOrangeBoldItalic gui=bold,italic guifg=' . s:orange
+exec 'highlight NightflyRedBoldItalic gui=bold,italic guifg=' . s:red
+exec 'highlight NightflyWatermelonBoldItalic gui=bold,italic guifg=' . s:watermelon
+exec 'highlight NightflyVioletBoldItalic gui=bold,italic guifg=' . s:violet
+exec 'highlight NightflyPurpleBoldItalic gui=bold,italic guifg=' . s:purple
+exec 'highlight NightflyBlueBoldItalic gui=bold,italic guifg=' . s:blue
+exec 'highlight NightflyIndigoBoldItalic gui=bold,italic guifg=' . s:indigo
+exec 'highlight NightflyTurquoiseBoldItalic gui=bold,italic guifg=' . s:turquoise
+exec 'highlight NightflyEmeraldBoldItalic gui=bold,italic guifg=' . s:emerald
+exec 'highlight NightflyGreenBoldItalic gui=bold,italic guifg=' . s:green
+
 exec 'highlight NightflyWhiteAlert guibg=bg guifg=' . s:white
 exec 'highlight NightflyYellowAlert guibg=bg guifg=' . s:yellow
 exec 'highlight NightflyOrangeAlert guibg=bg guifg=' . s:orange
@@ -292,6 +336,7 @@ exec 'highlight NightflyBlueAlert guibg=bg guifg=' . s:blue
 exec 'highlight NightflyEmeraldAlert guibg=bg guifg=' . s:emerald
 
 " Neovim Treesitter
+
 highlight! link TSAnnotation NightflyViolet
 highlight! link TSAttribute NightflyBlue
 highlight! link TSConstant NightflyPurple
@@ -299,16 +344,66 @@ highlight! link TSConstBuiltin NightflyGreen
 highlight! link TSConstMacro NightflyViolet
 highlight! link TSConstructor NightflyEmerald
 highlight! link TSError NightflyRed
-highlight! link TSFuncBuiltin NightflyBlue
+highlight! link TSFuncBuiltin NightflyIndigoBoldItalic
 highlight! link TSFuncMacro NightflyBlue
 highlight! link TSInclude NightflyWatermelon
 highlight! link TSKeywordOperator NightflyViolet
 highlight! link TSNamespace NightflyIndigo
-highlight! link TSParameter NightflyWhite
+highlight! link TSParameter NightflyTurquoise
 highlight! link TSPunctSpecial NightflyWatermelon
 highlight! link TSTag NightflyBlue
 highlight! link TSTagDelimiter NightflyGreen
-highlight! link TSVariableBuiltin NightflyGreen
+highlight! link TSType NightflyEmeraldItalic
+highlight! link TSTypeBuiltin NightflyEmeraldItalic
+highlight! link TSVariableBuiltin NightflyGreenItalic
+
+" highlight! link TSAnnotation NightflyViolet
+" highlight! link TSAttribute NightflyBlue
+" highlight! link TSBoolean NighflyPurple
+" highlight! link TSCharacter NighflyYellow
+" highlight! link TSComment NightflyGreyBlueItalic
+" highlight! link TSConditional NighflyViolet
+" highlight! link TSConstant NightflyPurple
+" highlight! link TSConstBuiltin NightflyGreen
+" highlight! link TSConstMacro NightflyViolet
+" highlight! link TSConstructor NightflyEmerald
+" highlight! link TSError NightflyRed
+" highlight! link TSException Nighfly
+" highlight! link TSField Blue
+" highlight! link TSFloat Yellow
+" highlight! link TSFuncBuiltin NightflyBlue
+" highlight! link TSFuncMacro NightflyBlue
+" highlight! link TSFunction Blue
+" highlight! link TSInclude NightflyWatermelon
+" highlight! link TSKeyword Purple
+" highlight! link TSKeywordFunction Purple
+" highlight! link TSKeywordOperator NightflyViolet
+" highlight! link TSLabel Purple
+" highlight! link TSMethod Blue
+" highlight! link TSNamespace NightflyIndigo
+" highlight! link TSNumber Yellow
+" highlight! link TSOperator Purple
+" highlight! link TSParameter NightflyWhite
+" highlight! link TSParameterReference Cyan
+" highlight! link TSProperty Blue
+" highlight! link TSPunctBracket Fg
+" highlight! link TSPunctDelimiter Grey
+" highlight! link TSPunctSpecial NightflyWatermelon
+" highlight! link TSRepeat Purple
+" highlight! link TSString Green
+" highlight! link TSStringEscape Yellow
+" highlight! link TSStringRegex Yellow
+" highlight! link TSStructure RedItalic
+" highlight! link TSTag NightflyBlue
+" highlight! link TSTagDelimiter NightflyGreen
+" highlight! link TSText Green
+" highlight! link TSType RedItalic
+" highlight! link TSTypeBuiltin RedItalic
+" highlight! link TSURI markdownUrl
+" highlight! link TSVariable Fg
+" highlight! link TSVariableBuiltin NightflyGreen
+" highlight! TSEmphasis cterm=italic gui=italic
+" highlight! TSUnderline cterm=underline gui=underline
 
 " C/C++
 highlight! link cDefine NightflyViolet
